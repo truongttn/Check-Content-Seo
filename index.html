@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Check Content</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="load.css">
+</head>
+<body >
+	<div class="preloader">
+        <div class="spinner">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <div class="rect3"></div>
+          <div class="rect4"></div>
+          <div class="rect5"></div>
+        </div>
+      </div>
+	<form action="#">
+		
+		<div class="content">
+			<div class="item-title">
+				<span>Title SEO(<65 ký tự): </span> 
+				<input readonly type="text" name="left1" class="left" > <br>
+				<input type="text" name="fname" id="fname" class="item-input" onKeyDown="Count(this.form.fname, 
+				this.form.left1);" onKeyUp="Count(this.form.fname,this.form.left1);">
+			</div>
+
+			<div class="item-des">
+				<span>Description SEO(<120 ký tự): </span>
+				<input readonly type="text" name="left2" class="left"><br>
+				<input type="text" name="fname2" id="fname2" class="item-input" onKeyDown="Count(this.form.fname2, this.form.left2);" onKeyUp="Count(this.form.fname2,this.form.left2);">
+			</div>
+
+			<div class="table">
+				<table>
+					<tr>
+						<td>
+							<span><b>Danh sách từ khoá:</b></span> <br>
+							<textarea id="txtdanhsach" name="txtdanhsach" rows="12" cols="45" class="item-text">
+							</textarea>
+						</td>
+						<td>
+							<span><b>Nội dung:</b></span> <br>
+							<textarea id="txtcontent" name="txtcontent" rows="12" cols="45" class="item-text">
+							</textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<span><b>Kết quả:</b></span> <br>
+							<textarea id="txtresult" name="txtresult" rows="12" cols="94"class="item-text">
+							</textarea>
+						</td>
+					</tr>
+				</table>
+				
+				
+			</div>
+
+		</div>
+	</form>
+	<input type="submit" onclick="CheckContent()" class="btn">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script language="javascript" src="chucnang.js"></script>
+	<script>
+		$(window).on('load', function(event) {
+  		$(".spinner").delay(1000).fadeOut("slow");
+    	$(".preloader").delay(900).fadeOut("slow");
+    	$("body").delay(900).css({overflow: "visible",});
+	});
+	</script>
+</body>
+</html>
