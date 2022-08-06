@@ -1,0 +1,38 @@
+body {
+ background-image: url("cuteCat.jpg");
+}
+.main{
+	font-family: Time New Roman;
+	font-size: 17px;
+}
+.left{
+	border: none;
+	background: #ebeef5;
+}
+.item-input{
+	outline: none;
+	border: 1px solid #ccc;
+	width: 75%;
+	height: 25px;
+}
+.item-text{
+	outline: none;
+	border: 1px solid #ccc;
+}
+.btn{
+	margin-left: 3px;
+	min-width:120px ;
+	height: 35px;
+	outline: none;
+	border: 1px solid #ccc;
+	background: #ef6a8a;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.btn:hover{
+	border: 1px solid #ccc;
+	background: #fff;
+	color: #000;    
+}
