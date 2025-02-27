@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Convert Link</title>
+</head>
+
+<body>
+
+    <nav style="padding-bottom: 15px;">
+        <input type="button" value="Home" onclick="window.location.href='./index.html';" class="btn">
+        <input type="button" value="Convert Link" onclick="window.location.href='./convert_link.html';" class="btn">
+    </nav>
+
+    <div class="main">
+        <h2>Convert Link</h2>
+        <p>
+            <span>Input:</span></br>
+            <textarea id="linkin" class="item-text" rows="12" cols="45" placeholder="Input links..."></textarea>
+        </p>
+
+        <p>
+            <span>Output:</span></br>
+            <textarea id="linkout" class="item-text" rows="12" cols="45" placeholder="Output"></textarea>
+        </p>
+
+        <button onclick="convertLinks()" class="btn">Convert</button>
+    </div>
+    <script language="javascript" src="chucnang.js"></script>
+</body>
+
+</html>
